@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skincare Routine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f1e8 0%, #f0e8df 100%);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+        }
+        
+        .products {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .product {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            align-items: center;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .product:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+        
+        .product-image {
+            text-align: center;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            max-height: 400px;
+            object-fit: contain;
+        }
+        
+        .product-info h2 {
+            color: #333;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .product-name {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        
+        .product-description {
+            color: #555;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        
+        .product-description p {
+            margin-bottom: 0.8rem;
+        }
+        
+        .highlight {
+            color: #8b7355;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .product {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .product-image {
+                order: -1;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ My Skincare Routine</h1>
+        
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product">
+                <div class="product-image">
+                    <img src="img_5655.jpg" alt="Youth to the People Papaya Cleanser">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Cleanser</div>
+                    <h2>Papaya + Vitamin C Superfruit Cleanser</h2>
+                    <div class="product-description">
+                        <p>My go-to first cleanser. I really like this one—it's been <span class="highlight">helping me fade my dark spots</span>. The combination of papaya enzymes and lactic acid gives a gentle exfoliation while brightening.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product">
+                <div class="product-image">
+                    <img src="img_5656.jpg" alt="Benzoyl Peroxide 5% Wash">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Treatment Cleanser</div>
+                    <h2>Benzoyl Peroxide 5% Topical Wash</h2>
+                    <div class="product-description">
+                        <p>My second cleanser that I <span class="highlight">leave on for 5 minutes</span> so the medication can absorb into my skin. It's been helpful—my face always feels clean and soft after. The downside is it <span class="highlight">sometimes makes my face red</span>, so I skip it on days when my skin is sensitive.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product">
+                <div class="product-image">
+                    <img src="img_5657.jpg" alt="Clindamycin Phosphate Swabs">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Prescription Treatment</div>
+                    <h2>Clindamycin Phosphate Swabs</h2>
+                    <div class="product-description">
+                        <p>Part of my acne treatment routine. I use this as directed by my dermatologist for targeted acne management. <span class="highlight">Sometimes I skip this</span> depending on my skin's condition for the day.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product">
+                <div class="product-image">
+                    <img src="img_5659.jpg" alt="Tretinoin Cream">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Retinoid</div>
+                    <h2>Tretinoin Cream USP 0.025%</h2>
+                    <div class="product-description">
+                        <p>My prescription retinoid—what I call my "swipes." I sometimes <span class="highlight">skip this one or just use it lightly</span> depending on how my skin is feeling. Retinoids are powerful, so it's all about finding the right balance to avoid irritation.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product">
+                <div class="product-image">
+                    <img src="img_5660.jpg" alt="Yummy Skin 10/10 Barrier Boost">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Barrier Serum</div>
+                    <h2>10/10 Barrier Boost</h2>
+                    <div class="product-description">
+                        <p><span class="highlight">A friend recommendation that I love</span>. This is my barrier-strengthening serum with HA and peptides. I <span class="highlight">always put it under my makeup</span> when I wear it, and I've noticed <span class="highlight">fewer breakouts</span> since I started using it consistently.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="product">
+                <div class="product-image">
+                    <img src="img_5658.jpg" alt="Youth to the People Adaptogen Deep Moisture Cream">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Moisturizer</div>
+                    <h2>Adaptogen Deep Moisture Cream</h2>
+                    <div class="product-description">
+                        <p>A rich moisturizer from Youth to the People with adaptogens, peptides, and lipids. This provides the hydration and nourishment my skin needs after all the active treatments, helping restore my moisture barrier.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 7 -->
+            <div class="product">
+                <div class="product-image">
+                    <img src="img_5661.jpg" alt="Youth to the People Superfood Skin Drip">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Serum</div>
+                    <h2>Superfood Skin Drip Serum</h2>
+                    <div class="product-description">
+                        <p>A smooth + glow serum with kale and peptides. <span class="highlight">A friend just recommended this to me</span>, so I haven't used it as much recently, so I can't say too much about it yet. Excited to see how it works into my routine!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
